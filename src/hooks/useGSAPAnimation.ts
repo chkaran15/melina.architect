@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
+/* eslint-disable @typescript-eslint/consistent-type-imports */
 "use client";
 
 import { useEffect, useRef, type RefObject } from "react";

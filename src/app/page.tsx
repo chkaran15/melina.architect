@@ -1,4 +1,3 @@
-
 import { getSession } from "@/server/better-auth/server";
 import { api, HydrateClient } from "@/trpc/server";
 import { CTASection } from "@/components/sections/CTASection";
@@ -11,6 +10,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
+  console.log(hello);
   const session = await getSession();
 
   if (session) {

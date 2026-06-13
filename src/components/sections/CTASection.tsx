@@ -42,7 +42,7 @@ export function CTASection() {
           <h2 className="font-display text-4xl font-medium leading-[1.05] tracking-tight sm:text-6xl">
             Have a project in mind?
             <br />
-            <span className="font-serif italic text-clay">Let's make it.</span>
+            <span className="font-serif italic text-clay">Let&apos;s make it.</span>
           </h2>
           <AnimatedButton href="#contact" variant="outline" className="border-primary-foreground/30 text-primary-foreground">
             Start a project
