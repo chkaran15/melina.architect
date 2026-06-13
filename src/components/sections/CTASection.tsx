@@ -44,7 +44,7 @@ export function CTASection() {
             <br />
             <span className="font-serif italic text-clay">Let&apos;s make it.</span>
           </h2>
-          <AnimatedButton href="#contact" variant="outline" className="border-primary-foreground/30 text-primary-foreground">
+          <AnimatedButton href="/contact" variant="outline" className="border-primary-foreground/30 text-primary-foreground">
             Start a project
           </AnimatedButton>
         </div>

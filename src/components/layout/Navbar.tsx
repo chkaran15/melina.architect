@@ -9,10 +9,10 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "Work", href: "#work" },
-  { label: "Studio", href: "#studio" },
-  { label: "Process", href: "#process" },
-  { label: "Recognition", href: "#recognition" },
+  { label: "Work", href: "/#work" },
+  { label: "Studio", href: "/#studio" },
+  { label: "Process", href: "/#process" },
+  { label: "Recognition", href: "/#recognition" },
 ];
 
 export function Navbar() {
@@ -49,7 +49,7 @@ export function Navbar() {
           )}
         >
           <Link
-            href="#top"
+            href="/#top"
             className="font-display text-lg font-semibold tracking-tight"
           >
             Melian<span className="text-clay">.</span>architect
@@ -68,7 +68,7 @@ export function Navbar() {
           </nav>
 
           <div className="hidden md:block">
-            <AnimatedButton href="#contact">Let&apos;s talk</AnimatedButton>
+            <AnimatedButton href="/contact">Let&apos;s talk</AnimatedButton>
           </div>
 
           <button
@@ -131,7 +131,7 @@ export function Navbar() {
                 className="pt-10"
               >
                 <Link
-                  href="#contact"
+                  href="/contact"
                   onClick={() => setOpen(false)}
                   className="inline-flex items-center gap-2 rounded-full bg-clay px-7 py-3.5 text-sm font-medium text-clay-foreground"
                 >

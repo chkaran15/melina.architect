@@ -2,6 +2,7 @@
 import { RevealText } from "@/components/ui/RevealText";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { CONTACT_EMAIL } from "@/components/sections/contact/contact-content";
 import Link from "next/link";
 
 const SOCIALS = ["Instagram", "Behance", "LinkedIn", "Awwwards"];
@@ -20,8 +21,8 @@ export function Footer() {
               className="display-xl max-w-3xl"
             />
             <div className="mt-10">
-              <AnimatedButton href="mailto:hello@studionova.com">
-                hello@studionova.com
+              <AnimatedButton href={`mailto:${CONTACT_EMAIL}`}>
+                {CONTACT_EMAIL}
               </AnimatedButton>
             </div>
           </div>
@@ -54,8 +55,8 @@ export function Footer() {
         </div>
 
         <div className="mt-20 flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Studio Nova. All rights reserved.</p>
-          <p>Crafted with intent — inspired by editorial design.</p>
+          <p>© {new Date().getFullYear()} Melina Architect. All rights reserved.</p>
+          <p>Crafted with intent — shaped for considered spaces.</p>
         </div>
       </div>
     </footer>
