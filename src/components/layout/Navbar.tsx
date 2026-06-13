@@ -52,7 +52,7 @@ export function Navbar() {
             href="#top"
             className="font-display text-lg font-semibold tracking-tight"
           >
-            studio<span className="text-clay">.</span>nova
+            Melian<span className="text-clay">.</span>architect
           </Link>
 
           <nav className="hidden items-center gap-9 md:flex">
@@ -92,7 +92,7 @@ export function Navbar() {
           >
             <div className="flex items-center justify-between px-5 py-5">
               <span className="font-display text-lg font-semibold">
-                studio<span className="text-clay">.</span>nova
+                Melian<span className="text-clay">.</span>architect
               </span>
               <button
                 onClick={() => setOpen(false)}
