@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { ease } from "@/lib/animations";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "Work", href: "#work" },
@@ -47,27 +48,27 @@ export function Navbar() {
             "mt-3 max-w-[105rem] rounded-full border border-border/70 bg-background/70 px-6 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)] backdrop-blur-xl",
           )}
         >
-          <a
+          <Link
             href="#top"
             className="font-display text-lg font-semibold tracking-tight"
           >
             studio<span className="text-clay">.</span>nova
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-9 md:flex">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="link-underline text-sm text-foreground/80 transition-colors hover:text-foreground"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           <div className="hidden md:block">
-            <AnimatedButton href="#contact">Let's talk</AnimatedButton>
+            <AnimatedButton href="#contact">Let&apos;s talk</AnimatedButton>
           </div>
 
           <button
@@ -87,7 +88,7 @@ export function Navbar() {
             animate={{ clipPath: "circle(150% at 90% 6%)" }}
             exit={{ clipPath: "circle(0% at 90% 6%)" }}
             transition={{ duration: 0.7, ease: ease.inOut }}
-            className="fixed inset-0 z-[60] bg-primary text-primary-foreground md:hidden"
+            className="fixed inset-0 z-60 bg-primary text-primary-foreground md:hidden"
           >
             <div className="flex items-center justify-between px-5 py-5">
               <span className="font-display text-lg font-semibold">
@@ -129,13 +130,13 @@ export function Navbar() {
                 }}
                 className="pt-10"
               >
-                <a
+                <Link
                   href="#contact"
                   onClick={() => setOpen(false)}
                   className="inline-flex items-center gap-2 rounded-full bg-clay px-7 py-3.5 text-sm font-medium text-clay-foreground"
                 >
-                  Let's talk
-                </a>
+                  Let&apos;s talk
+                </Link>
               </motion.div>
             </motion.nav>
           </motion.div>

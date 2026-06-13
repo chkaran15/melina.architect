@@ -23,7 +23,7 @@ export function HeroSection() {
     <section
       id="top"
       ref={ref}
-      className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden px-5 pb-12 pt-28 sm:px-8"
+      className="relative flex min-h-svh flex-col justify-end overflow-hidden px-5 pb-12 pt-28 sm:px-8"
     >
       {/* vertical side label, echoing the reference's "Honors" rail */}
       <span className="eyebrow pointer-events-none absolute right-6 top-1/2 hidden -translate-y-1/2 rotate-90 text-muted-foreground lg:block">

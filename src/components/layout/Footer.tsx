@@ -2,6 +2,7 @@
 import { RevealText } from "@/components/ui/RevealText";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import Link from "next/link";
 
 const SOCIALS = ["Instagram", "Behance", "LinkedIn", "Awwwards"];
 
@@ -39,12 +40,12 @@ export function Footer() {
               <ul className="mt-3 space-y-2">
                 {SOCIALS.map((s) => (
                   <li key={s}>
-                    <a
+                    <Link
                       href="#"
                       className="link-underline text-foreground/80 transition-colors hover:text-foreground"
                     >
                       {s}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

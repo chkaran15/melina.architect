@@ -25,7 +25,7 @@ export function ScrollControls() {
     <>
       <motion.div
         style={{ scaleX }}
-        className="fixed inset-x-0 top-0 z-[70] h-[3px] origin-left bg-clay"
+        className="fixed inset-x-0 top-0 z-70 h-0.75 origin-left bg-clay"
       />
       <AnimatePresence>
         {show && (
@@ -38,7 +38,7 @@ export function ScrollControls() {
               window.scrollTo({ top: 0, behavior: "smooth" })
             }
             aria-label="Back to top"
-            className="fixed bottom-6 right-6 z-[70] flex h-14 w-14 items-center justify-center rounded-full border border-border bg-background/80 shadow-[0_10px_30px_-12px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-colors hover:bg-foreground hover:text-background"
+            className="fixed bottom-6 right-6 z-70 flex h-14 w-14 items-center justify-center rounded-full border border-border bg-background/80 shadow-[0_10px_30px_-12px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-colors hover:bg-foreground hover:text-background"
           >
             <ArrowUp className="h-5 w-5" />
           </motion.button>
