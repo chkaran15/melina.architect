@@ -2,8 +2,8 @@ export const CONTACT_EMAIL = "hello@melina.architect";
 
 export const directContactActions = [
   {
-    label: "Email the studio",
-    detail: "For project starts, press inquiries, and collaboration notes.",
+    label: "Email Melina",
+    detail: "For residential, interior, renovation, and collaboration notes.",
     href: `mailto:${CONTACT_EMAIL}?subject=Project%20conversation%20with%20Melina`,
   },
   {

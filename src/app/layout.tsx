@@ -6,8 +6,9 @@ import { TRPCReactProvider } from "@/trpc/react";
 import AppLayout from "@/components/layout/AppLayout";
 
 export const metadata: Metadata = {
-  title: "Melian.architect",
-  description: "A design studio crafting timeless digital experiences for visionary brands.",
+  title: "Melina Chaudhary Architect",
+  description:
+    "Architect-led portfolio and practice for calm residential, interior, renovation, and spatial design work.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

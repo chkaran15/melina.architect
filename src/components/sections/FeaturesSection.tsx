@@ -8,23 +8,23 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 const SERVICES = [
   {
     icon: Compass,
-    title: "Brand & Identity",
-    desc: "Visual systems, type and art direction that give a brand a distinct, lasting voice.",
+    title: "Residential Design",
+    desc: "Homes, additions, and spatial studies shaped around site, light, privacy, and everyday rituals.",
   },
   {
     icon: Layers,
-    title: "Web Design",
-    desc: "Editorial, responsive interfaces designed pixel-by-pixel for clarity and delight.",
+    title: "Interior Architecture",
+    desc: "Room sequencing, material direction, built-in elements, and atmosphere for coherent interiors.",
   },
   {
     icon: Wand2,
-    title: "Motion & Interaction",
-    desc: "Scroll-driven storytelling and micro-interactions that make products feel alive.",
+    title: "Renovation Strategy",
+    desc: "Measured redesign thinking for existing spaces, from constraints and priorities to a clear next brief.",
   },
   {
     icon: Sparkles,
-    title: "Development",
-    desc: "Performant, accessible front-ends built with care — from prototype to production.",
+    title: "Concept Development",
+    desc: "Early planning, mood, massing, and layout studies that turn loose ideas into a practical direction.",
   },
 ];
 
@@ -37,8 +37,8 @@ export function FeaturesSection() {
           <h2 className="display-xl mt-6 max-w-[12ch]">What we do</h2>
         </div>
         <p className="max-w-sm text-muted-foreground">
-          Four disciplines, one obsessive standard. We work end-to-end or plug
-          into your team where it counts.
+          Four ways to begin a conversation about space, from first ideas to a
+          more resolved architectural direction.
         </p>
       </div>
 

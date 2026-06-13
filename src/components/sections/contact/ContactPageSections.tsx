@@ -48,7 +48,7 @@ export function ContactPageSections() {
               <AnimatedButton
                 href={`mailto:${CONTACT_EMAIL}?subject=Project%20conversation%20with%20Melina`}
               >
-                Email the studio
+                Email Melina
               </AnimatedButton>
               <AnimatedButton href="#inquiry" variant="outline">
                 Share project details

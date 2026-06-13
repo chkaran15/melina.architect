@@ -6,7 +6,7 @@ import { ArrowDown } from "lucide-react";
 import { ease, fadeUp, riseIn, staggerContainer } from "@/lib/animations";
 import { heroImage } from "@/lib/images";
 
-const TITLE_LINES = ["Design that", "moves"];
+const TITLE_LINES = ["Architecture for", "considered"];
 
 export function HeroSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -27,7 +27,7 @@ export function HeroSection() {
     >
       {/* vertical side label, echoing the reference's "Honors" rail */}
       <span className="eyebrow pointer-events-none absolute right-6 top-1/2 hidden -translate-y-1/2 rotate-90 text-muted-foreground lg:block">
-        Creative Studio — Est. 2014
+        Architecture Portfolio - Selected Work
       </span>
 
       <motion.div style={{ y: textY, opacity: fade }} className="relative z-10">
@@ -42,7 +42,7 @@ export function HeroSection() {
           </motion.span>
           <motion.span variants={fadeUp} className="h-px w-12 bg-border" />
           <motion.span variants={fadeUp} className="eyebrow text-muted-foreground">
-            Art Direction & Interaction
+            Residential, Interior & Spatial Design
           </motion.span>
         </motion.div>
 
@@ -57,7 +57,7 @@ export function HeroSection() {
               <motion.span variants={riseIn} className="block">
                 {line}
                 {i === 1 && (
-                  <span className="font-serif italic text-clay"> people.</span>
+                  <span className="font-serif italic text-clay"> living.</span>
                 )}
               </motion.span>
             </span>
@@ -74,8 +74,8 @@ export function HeroSection() {
             variants={fadeUp}
             className="max-w-md text-base leading-relaxed text-muted-foreground"
           >
-            We are an independent studio crafting brands, websites and digital
-            products with an obsession for motion, detail and feeling.
+            Melina Chaudhary shapes homes, interiors, and renovation concepts
+            around light, proportion, material, and the rhythm of daily life.
           </motion.p>
           <motion.a
             variants={fadeUp}
@@ -99,7 +99,7 @@ export function HeroSection() {
       >
         <motion.img
           src={heroImage}
-          alt="Abstract sculptural studio artwork"
+          alt="Calm architectural interior study"
           width={1200}
           height={1500}
           style={{ y: imgY, scale: imgScale }}

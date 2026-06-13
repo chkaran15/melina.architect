@@ -6,23 +6,23 @@ import { useGSAPAnimation } from "@/hooks/useGSAPAnimation";
 const STEPS = [
   {
     no: "01",
-    title: "Discover",
-    desc: "We dig into your goals, audience and competitive landscape to define a sharp, shared direction.",
+    title: "Listen",
+    desc: "We begin with the site, the people, the habits, and the questions the current space has not answered yet.",
   },
   {
     no: "02",
-    title: "Design",
-    desc: "Concepts evolve into a complete visual system — type, color, layout and motion language.",
+    title: "Study",
+    desc: "Plans, references, light, circulation, and constraints are studied until the strongest direction becomes clear.",
   },
   {
     no: "03",
-    title: "Build",
-    desc: "We engineer responsive, accessible front-ends with buttery interactions and clean code.",
+    title: "Design",
+    desc: "The concept develops into spatial decisions, material direction, and drawings that make the intent legible.",
   },
   {
     no: "04",
-    title: "Launch",
-    desc: "We ship, measure and refine — making sure the work performs as beautifully as it looks.",
+    title: "Refine",
+    desc: "Each decision is tested for proportion, practicality, atmosphere, and the way the space will be lived in.",
   },
 ];
 

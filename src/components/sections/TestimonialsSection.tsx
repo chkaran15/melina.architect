@@ -8,29 +8,29 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 const QUOTES = [
   {
     quote:
-      "They translated a vague vision into a brand and site that finally feels like us. The motion details are unreal.",
-    name: "Camille Roux",
-    role: "Founder, Lumen",
+      "Architecture should make everyday life easier to inhabit, not louder to explain.",
+    name: "Residential focus",
+    role: "Homes, additions, and personal spaces",
   },
   {
     quote:
-      "Rigorous, fast and genuinely creative. Every handoff was clean and the launch metrics spoke for themselves.",
-    name: "Daniel Mertens",
-    role: "Head of Product, Nacre",
+      "A useful interior starts with sequence: where you arrive, pause, gather, work, and rest.",
+    name: "Interior focus",
+    role: "Material, flow, furniture, and atmosphere",
   },
   {
     quote:
-      "A rare studio that cares about craft and outcomes equally. We've doubled engagement since the redesign.",
-    name: "Sofia Almeida",
-    role: "CMO, Form & Field",
+      "Good renovation work respects what exists while giving the next version of the space a clearer logic.",
+    name: "Renovation focus",
+    role: "Existing spaces, constraints, and careful change",
   },
 ];
 
 const RECOGNITION = [
-  { award: "Awwwards", detail: "Site of the Day ×3" },
-  { award: "CSS Design Awards", detail: "Best UI ×2" },
-  { award: "FWA", detail: "Of the Day" },
-  { award: "The Webby Awards", detail: "Honoree" },
+  { award: "Practice", detail: "Architect-led portfolio" },
+  { award: "Approach", detail: "Clear spatial thinking" },
+  { award: "Focus", detail: "Residential and interiors" },
+  { award: "Inquiry", detail: "Selected new projects" },
 ];
 
 export function TestimonialsSection() {
@@ -39,10 +39,10 @@ export function TestimonialsSection() {
       id="recognition"
       className="mx-auto max-w-[110rem] px-5 py-24 sm:px-8 sm:py-32"
     >
-      <SectionHeading index="06" label="Recognition" />
+      <SectionHeading index="06" label="Profile" />
       <RevealText
         as="h2"
-        text="Trusted & awarded"
+        text="Practice notes"
         serifWords={[1]}
         className="display-xl mt-6"
       />

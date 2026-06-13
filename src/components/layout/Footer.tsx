@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CONTACT_EMAIL } from "@/components/sections/contact/contact-content";
 import Link from "next/link";
 
-const SOCIALS = ["Instagram", "Behance", "LinkedIn", "Awwwards"];
+const SOCIALS = ["Instagram", "Behance", "LinkedIn", "Portfolio"];
 
 export function Footer() {
   return (
@@ -16,7 +16,7 @@ export function Footer() {
           <div>
             <RevealText
               as="h2"
-              text="Let's build something worth remembering."
+              text="Let's shape a space with care."
               serifWords={[4, 5]}
               className="display-xl max-w-3xl"
             />
@@ -31,9 +31,9 @@ export function Footer() {
             <div>
               <p className="eyebrow text-muted-foreground">Studio</p>
               <p className="mt-3 leading-relaxed text-foreground/80">
-                14 Rue des Arts
+                Appointment-based studio
                 <br />
-                75003 Paris, FR
+                Available for selected projects
               </p>
             </div>
             <div>
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="mt-20 flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Melina Architect. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Melina Chaudhary Architect. All rights reserved.</p>
           <p>Crafted with intent — shaped for considered spaces.</p>
         </div>
       </div>

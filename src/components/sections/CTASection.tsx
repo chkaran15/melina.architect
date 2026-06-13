@@ -5,11 +5,11 @@ import { AnimatedButton } from "@/components/ui/AnimatedButton";
 
 const MARQUEE = [
   "Available for new projects",
-  "Brand",
-  "Web",
-  "Motion",
-  "Product",
-  "Let's collaborate",
+  "Residential",
+  "Interiors",
+  "Renovation",
+  "Spatial studies",
+  "Let's discuss the space",
 ];
 
 export function CTASection() {
@@ -40,9 +40,9 @@ export function CTASection() {
       <div className="mx-auto mt-20 max-w-[110rem] px-5 sm:px-8">
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <h2 className="font-display text-4xl font-medium leading-[1.05] tracking-tight sm:text-6xl">
-            Have a project in mind?
+            Have a space in mind?
             <br />
-            <span className="font-serif italic text-clay">Let&apos;s make it.</span>
+            <span className="font-serif italic text-clay">Let&apos;s study it.</span>
           </h2>
           <AnimatedButton href="/contact" variant="outline" className="border-primary-foreground/30 text-primary-foreground">
             Start a project

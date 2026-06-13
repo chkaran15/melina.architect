@@ -6,10 +6,10 @@ import { RevealText } from "@/components/ui/RevealText";
 import { workImages } from "@/lib/images";
 
 const WORK: WorkItem[] = [
-  { title: "Lumen", category: "Brand · Web · Motion", year: "2025", image: workImages.lumen },
-  { title: "Atelier Maré", category: "Art Direction", year: "2025", image: workImages.atelierMare },
-  { title: "Form & Field", category: "Identity · Web", year: "2024", image: workImages.formField },
-  { title: "Nacre", category: "Product · 3D", year: "2024", image: workImages.nacre },
+  { title: "Courtyard Residence", category: "Residential Planning", year: "2025", image: workImages.lumen },
+  { title: "Atelier Apartment", category: "Interior Architecture", year: "2025", image: workImages.atelierMare },
+  { title: "Lightwell House", category: "Renovation Strategy", year: "2024", image: workImages.formField },
+  { title: "Compact Studio", category: "Spatial Study", year: "2024", image: workImages.nacre },
 ];
 
 export function ShowcaseSection() {
@@ -26,7 +26,8 @@ export function ShowcaseSection() {
           />
         </div>
         <p className="max-w-sm text-muted-foreground">
-          A selection of recent collaborations across brand, web and product.
+          A selection of residential, interior, and spatial studies exploring
+          proportion, material, light, and daily use.
         </p>
       </div>
 

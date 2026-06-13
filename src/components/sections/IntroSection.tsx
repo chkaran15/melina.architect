@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const WORDS =
-  "We turn ambitious ideas into refined digital experiences — pairing editorial design with engineering precision so every detail feels intentional."
+  "Melina Chaudhary Architect develops thoughtful spatial ideas into clear, livable places - balancing planning, light, material, and human routines so each decision feels grounded."
     .split(" ");
 
 export function IntroSection() {
