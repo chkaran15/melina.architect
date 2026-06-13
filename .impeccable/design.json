@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-13T19:57:02Z",
+  "title": "Design System: Melina Architect",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Studio Ink",
+        "canonical": "oklch(0.145 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.25 0 0)",
+          "oklch(0.35 0 0)",
+          "oklch(0.45 0 0)",
+          "oklch(0.58 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.96 0 0)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White Canvas",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.16 0 0)",
+          "oklch(0.28 0 0)",
+          "oklch(0.42 0 0)",
+          "oklch(0.56 0 0)",
+          "oklch(0.70 0 0)",
+          "oklch(0.84 0 0)",
+          "oklch(0.94 0 0)",
+          "oklch(1 0 0)"
+        ]
+      },
+      "paper-warm": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "oklch(0.985 0.004 78)",
+        "tonalRamp": [
+          "oklch(0.18 0.004 78)",
+          "oklch(0.30 0.004 78)",
+          "oklch(0.44 0.004 78)",
+          "oklch(0.58 0.004 78)",
+          "oklch(0.72 0.004 78)",
+          "oklch(0.86 0.004 78)",
+          "oklch(0.94 0.004 78)",
+          "oklch(0.985 0.004 78)"
+        ]
+      },
+      "paper-muted": {
+        "role": "neutral",
+        "displayName": "Muted Paper",
+        "canonical": "oklch(0.958 0.006 78)",
+        "tonalRamp": [
+          "oklch(0.18 0.006 78)",
+          "oklch(0.30 0.006 78)",
+          "oklch(0.44 0.006 78)",
+          "oklch(0.58 0.006 78)",
+          "oklch(0.72 0.006 78)",
+          "oklch(0.84 0.006 78)",
+          "oklch(0.91 0.006 78)",
+          "oklch(0.958 0.006 78)"
+        ]
+      },
+      "clay": {
+        "role": "primary",
+        "displayName": "Clay Mark",
+        "canonical": "oklch(0.66 0.11 55)",
+        "tonalRamp": [
+          "oklch(0.18 0.11 55)",
+          "oklch(0.28 0.11 55)",
+          "oklch(0.39 0.11 55)",
+          "oklch(0.50 0.11 55)",
+          "oklch(0.61 0.11 55)",
+          "oklch(0.72 0.11 55)",
+          "oklch(0.84 0.11 55)",
+          "oklch(0.94 0.11 55)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.556 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.25 0 0)",
+          "oklch(0.36 0 0)",
+          "oklch(0.48 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.70 0 0)",
+          "oklch(0.84 0 0)",
+          "oklch(0.94 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Hero Display",
+        "purpose": "Hero-only type for the first viewport."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Large section titles and major CTAs."
+      },
+      "title": {
+        "displayName": "Card Title",
+        "purpose": "Project, service, and process titles."
+      },
+      "body": {
+        "displayName": "Body Copy",
+        "purpose": "Readable explanatory copy with generous line-height."
+      },
+      "label": {
+        "displayName": "Editorial Label",
+        "purpose": "Short indices, section markers, metadata, and rails."
+      }
+    },
+    "shadows": [
+      {
+        "name": "nav-float",
+        "value": "0 8px 30px -12px rgba(0,0,0,0.18)",
+        "purpose": "Scrolled masthead only."
+      },
+      {
+        "name": "soft-glow-primary",
+        "value": "oklch(0.66 0.11 55 / 28%)",
+        "purpose": "Optional subtle clay glow; avoid decorative glow fields."
+      },
+      {
+        "name": "soft-glow-ink",
+        "value": "oklch(0.145 0 0 / 10%)",
+        "purpose": "Optional restrained ambient dark depth."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default reveal and state-change easing."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Clip-path and sliding fill transitions."
+      },
+      {
+        "name": "ease-expo",
+        "value": "cubic-bezier(0.19, 1, 0.22, 1)",
+        "purpose": "Premium line reveals and large movement."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "narrative": {
+      "northStar": "The Tactile White Studio",
+      "overview": "This system is a premium portfolio landing page built around the sensation of a quiet studio wall: white canvas, black ink, clay marks, large type, and carefully placed imagery. It should feel editorial, precise, and tactile without becoming a generic magazine template. The visitor should understand taste and execution quality before they read a service list.\n\nThe current identity is intentionally narrow: white and near-white surfaces, near-black typography, clay as the only warm accent, and motion as craft evidence. Extend through proportion, sequencing, imagery, and interaction quality, not by adding unrelated colors or decorative effects.\n\nIt explicitly rejects the PRODUCT.md anti-references: generic SaaS landing-page patterns, flat skills grids, excessive glass effects, loud rainbow gradients, and redesigns that erase the current white-canvas, black-ink, clay-accent identity.",
+      "keyCharacteristics": [
+        "Large editorial display type with tight but readable tracking.",
+        "Clay accent used sparingly for punctuation, emphasis, and selection.",
+        "Image-led work cards with internal parallax and restrained overlays.",
+        "Section rhythm built from generous whitespace, narrow copy, and asymmetric offsets.",
+        "Motion that feels composed: line reveals, staggered entries, magnetic CTAs, and scroll-driven image movement."
+      ],
+      "rules": [
+        {
+          "name": "The One Warm Mark Rule",
+          "body": "Clay is the only warm accent. Do not introduce extra oranges, golds, reds, or rainbow gradients to create energy.",
+          "section": "colors"
+        },
+        {
+          "name": "The White Canvas Rule",
+          "body": "Most sections remain white or near-white. Warmth comes from clay, imagery, and type contrast, not from beige body backgrounds.",
+          "section": "colors"
+        },
+        {
+          "name": "The Serif Interruption Rule",
+          "body": "Instrument Serif is an accent, not a paragraph font. Use it for one or two words inside display copy when the page needs a tactile break.",
+          "section": "typography"
+        },
+        {
+          "name": "The Label Scarcity Rule",
+          "body": "Repeating numeric eyebrows can become scaffolding. Keep labels purposeful: one marker row per section is the ceiling.",
+          "section": "typography"
+        },
+        {
+          "name": "The Flat-At-Rest Rule",
+          "body": "Cards, sections, and service panels are flat by default. If a surface needs emphasis, use scale, image movement, overlay, or a precise border before adding shadow.",
+          "section": "elevation"
+        }
+      ],
+      "dos": [
+        "Do preserve the current white-canvas, black-ink, clay-accent identity when adding sections.",
+        "Do let typography, spacing, imagery, and motion carry the premium feeling.",
+        "Do use Clay Mark for rare emphasis: one or two highlighted words, indices, icons, selection, and CTA hover states.",
+        "Do keep body text readable against paper surfaces and verify contrast when using Muted Ink.",
+        "Do provide reduced-motion fallbacks for Framer Motion, GSAP, Lenis, and CSS transitions.",
+        "Do use real imagery or project visuals for portfolio proof. Empty colored blocks are not a substitute."
+      ],
+      "donts": [
+        "Don't use generic SaaS landing-page patterns, including hero metrics, feature-card sameness, or template-like pricing/testimonial blocks.",
+        "Don't build flat skills grids as the primary proof of craft.",
+        "Don't add excessive glass effects. Glass Paper is for the scrolled navigation, not every card.",
+        "Don't use loud rainbow gradients or gradient text.",
+        "Don't erase the current white-canvas, black-ink, clay-accent identity with a new palette.",
+        "Don't use colored side-stripe borders, over-rounded cards, nested cards, or decorative wide shadows.",
+        "Don't repeat tiny uppercase tracked eyebrows above every heading when the marker is not adding information."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Magnetic pill CTA with a bottom-up clay fill and arrow motion.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#contact\"><span class=\"ds-btn-fill\"></span><span class=\"ds-btn-label\">Let's talk <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17L17 7M8 7h9v9\" /></svg></span></a>",
+      "css": ".ds-btn-primary { position: relative; display: inline-flex; overflow: hidden; border-radius: 999px; background: var(--primary, oklch(0.205 0 0)); color: var(--primary-foreground, oklch(0.985 0 0)); padding: 0.875rem 1.75rem; font: 500 0.875rem/1.2 var(--font-body, Hanken Grotesk, sans-serif); text-decoration: none; letter-spacing: -0.01em; transition: color 300ms ease; } .ds-btn-fill { position: absolute; inset: 0; transform: translateY(100%); border-radius: inherit; background: var(--clay, oklch(0.66 0.11 55)); transition: transform 500ms cubic-bezier(0.65,0,0.35,1); } .ds-btn-primary:hover .ds-btn-fill, .ds-btn-primary:focus-visible .ds-btn-fill { transform: translateY(0); } .ds-btn-label { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 0.5rem; } .ds-btn-label svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 300ms ease; } .ds-btn-primary:hover svg, .ds-btn-primary:focus-visible svg { transform: translate(2px,-2px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--clay, oklch(0.66 0.11 55)); outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Transparent pill CTA that inverts through a black sliding fill.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#work\"><span class=\"ds-btn-outline-fill\"></span><span class=\"ds-btn-outline-label\">View work <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17L17 7M8 7h9v9\" /></svg></span></a>",
+      "css": ".ds-btn-outline { position: relative; display: inline-flex; overflow: hidden; border: 1px solid color-mix(in oklab, currentColor 25%, transparent); border-radius: 999px; background: transparent; color: var(--foreground, oklch(0.145 0 0)); padding: 0.875rem 1.75rem; font: 500 0.875rem/1.2 var(--font-body, Hanken Grotesk, sans-serif); text-decoration: none; transition: color 300ms ease; } .ds-btn-outline-fill { position: absolute; inset: 0; transform: translateY(100%); border-radius: inherit; background: var(--foreground, oklch(0.145 0 0)); transition: transform 500ms cubic-bezier(0.65,0,0.35,1); } .ds-btn-outline:hover, .ds-btn-outline:focus-visible { color: var(--background, oklch(1 0 0)); } .ds-btn-outline:hover .ds-btn-outline-fill, .ds-btn-outline:focus-visible .ds-btn-outline-fill { transform: translateY(0); } .ds-btn-outline-label { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 0.5rem; } .ds-btn-outline-label svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-btn-outline:focus-visible { outline: 2px solid var(--clay, oklch(0.66 0.11 55)); outline-offset: 3px; }"
+    },
+    {
+      "name": "Scrolled Navigation",
+      "kind": "nav",
+      "refersTo": "nav-scrolled",
+      "description": "Floating full-pill masthead with translucent paper, blur, and underline-hover links.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-logo\" href=\"#top\">Melian<span>.</span>architect</a><div class=\"ds-nav-links\"><a href=\"#work\">Work</a><a href=\"#studio\">Studio</a><a href=\"#process\">Process</a></div></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 2rem; border: 1px solid var(--border, oklch(0.922 0 0)); border-radius: 999px; background: color-mix(in oklab, var(--background, white) 70%, transparent); color: var(--foreground, oklch(0.145 0 0)); padding: 0.75rem 1.5rem; box-shadow: 0 8px 30px -12px rgba(0,0,0,0.18); backdrop-filter: blur(18px); } .ds-logo { color: inherit; font: 600 1.125rem/1 var(--font-display, Space Grotesk, sans-serif); letter-spacing: -0.03em; text-decoration: none; } .ds-logo span { color: var(--clay, oklch(0.66 0.11 55)); } .ds-nav-links { display: flex; align-items: center; gap: 2.25rem; } .ds-nav-links a { position: relative; color: color-mix(in oklab, currentColor 80%, transparent); font: 400 0.875rem/1.2 var(--font-body, Hanken Grotesk, sans-serif); text-decoration: none; transition: color 250ms ease; } .ds-nav-links a::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 450ms cubic-bezier(0.65,0,0.35,1); } .ds-nav-links a:hover { color: currentColor; } .ds-nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "section-heading",
+      "description": "Editorial marker row with clay index, soft rule, and compact uppercase label.",
+      "html": "<div class=\"ds-section-heading\"><span class=\"ds-section-index\">04</span><span class=\"ds-section-rule\"></span><span class=\"ds-section-label\">Selected Work</span></div>",
+      "css": ".ds-section-heading { display: flex; align-items: center; gap: 1rem; color: var(--muted-foreground, oklch(0.556 0 0)); } .ds-section-index, .ds-section-label { font: 650 0.7rem/1.2 var(--font-body, Hanken Grotesk, sans-serif); letter-spacing: 0.18em; text-transform: uppercase; } .ds-section-index { color: var(--clay, oklch(0.66 0.11 55)); } .ds-section-rule { display: block; width: 2rem; height: 1px; background: var(--border, oklch(0.922 0 0)); }"
+    },
+    {
+      "name": "Showcase Card",
+      "kind": "card",
+      "refersTo": "showcase-card",
+      "description": "Image-first portfolio card with 4:5 mask, hover overlay, and arrow reveal.",
+      "html": "<article class=\"ds-showcase-card\"><div class=\"ds-showcase-media\"><img src=\"https://images.unsplash.com/photo-1571513800374-df1bbe650e56?q=80&w=1200&auto=format&fit=crop\" alt=\"Editorial studio work sample\" /><span class=\"ds-showcase-arrow\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17L17 7M8 7h9v9\" /></svg></span></div><div class=\"ds-showcase-meta\"><div><h3>Lumen</h3><p>Brand · Web · Motion</p></div><span>2025</span></div></article>",
+      "css": ".ds-showcase-card { cursor: pointer; color: var(--foreground, oklch(0.145 0 0)); } .ds-showcase-media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 1.25rem; background: var(--muted, oklch(0.97 0 0)); } .ds-showcase-media img { position: absolute; inset: -8% 0 0; width: 100%; height: 116%; object-fit: cover; transition: transform 1.2s cubic-bezier(0.19,1,0.22,1); } .ds-showcase-card:hover img { transform: scale(1.05); } .ds-showcase-media::after { content: ''; position: absolute; inset: 0; background: color-mix(in oklab, var(--foreground, black) 0%, transparent); transition: background 500ms ease; } .ds-showcase-card:hover .ds-showcase-media::after { background: color-mix(in oklab, var(--foreground, black) 10%, transparent); } .ds-showcase-arrow { position: absolute; right: 1rem; top: 1rem; display: flex; width: 2.75rem; height: 2.75rem; align-items: center; justify-content: center; border-radius: 999px; background: color-mix(in oklab, var(--background, white) 90%, transparent); color: var(--foreground, oklch(0.145 0 0)); opacity: 0; transform: translateY(0.5rem); transition: opacity 500ms ease, transform 500ms ease; backdrop-filter: blur(12px); } .ds-showcase-card:hover .ds-showcase-arrow { opacity: 1; transform: translateY(0); } .ds-showcase-arrow svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-showcase-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; } .ds-showcase-meta h3 { margin: 0; font: 500 1.5rem/1 var(--font-display, Space Grotesk, sans-serif); letter-spacing: -0.03em; } .ds-showcase-meta p { margin: 0.25rem 0 0; color: var(--muted-foreground, oklch(0.556 0 0)); font: 400 0.875rem/1.5 var(--font-body, Hanken Grotesk, sans-serif); } .ds-showcase-meta span { padding-top: 0.25rem; color: var(--muted-foreground, oklch(0.556 0 0)); font: 650 0.7rem/1.2 var(--font-body, Hanken Grotesk, sans-serif); letter-spacing: 0.18em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Service Tile",
+      "kind": "card",
+      "refersTo": "service-tile",
+      "description": "Flat capability tile inside a bordered seam grid, with clay icon and slow tonal hover.",
+      "html": "<article class=\"ds-service-tile\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z\" /></svg><h3>Motion & Interaction</h3><p>Scroll-driven storytelling and micro-interactions that make products feel alive.</p></article>",
+      "css": ".ds-service-tile { background: var(--background, oklch(1 0 0)); color: var(--foreground, oklch(0.145 0 0)); padding: 2.5rem; transition: background-color 500ms ease; } .ds-service-tile:hover { background: var(--card, oklch(1 0 0)); } .ds-service-tile svg { width: 1.75rem; height: 1.75rem; fill: none; stroke: var(--clay, oklch(0.66 0.11 55)); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 500ms ease; } .ds-service-tile:hover svg { transform: translateY(-0.25rem); } .ds-service-tile h3 { margin: 4rem 0 0; font: 500 1.25rem/1 var(--font-display, Space Grotesk, sans-serif); letter-spacing: -0.025em; } .ds-service-tile p { margin: 0.75rem 0 0; color: var(--muted-foreground, oklch(0.556 0 0)); font: 400 0.875rem/1.65 var(--font-body, Hanken Grotesk, sans-serif); }"
+    }
+  ]
+}

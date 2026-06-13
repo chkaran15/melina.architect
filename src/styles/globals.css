@@ -59,6 +59,11 @@
 @theme inline {
   --color-clay: var(--clay);
   --color-clay-foreground: var(--clay-foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-glass: var(--surface-glass);
+  --color-glow-primary: var(--glow-primary);
+  --color-glow-secondary: var(--glow-secondary);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
   --font-serif: var(--font-serif);
@@ -106,6 +111,39 @@
   --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
+
+  /* Design-system aliases extracted from the landing page identity */
+  --surface: oklch(0.985 0.004 78);
+  --surface-muted: oklch(0.958 0.006 78);
+  --surface-glass: oklch(1 0 0 / 72%);
+  --border-strong: oklch(0.82 0.006 78);
+  --glow-primary: oklch(0.66 0.11 55 / 28%);
+  --glow-secondary: oklch(0.145 0 0 / 10%);
+  --gradient-clay: oklch(0.66 0.11 55);
+  --gradient-ink: oklch(0.145 0 0);
+  --gradient-paper: oklch(1 0 0);
+
+  --text-hero: clamp(3rem, 13vw, 13rem);
+  --text-section-title: clamp(2.35rem, 7vw, 6rem);
+  --text-section-description: clamp(1rem, 1.15vw, 1.125rem);
+  --text-card-title: clamp(1.25rem, 1.8vw, 1.75rem);
+  --text-card-description: 0.95rem;
+  --text-small-label: 0.7rem;
+  --text-meta: 0.8125rem;
+
+  --space-section-y: clamp(6rem, 10vw, 9rem);
+  --space-section-y-tight: clamp(4.5rem, 8vw, 7rem);
+  --space-container-x: clamp(1.25rem, 3vw, 2rem);
+  --space-grid-gap: clamp(1rem, 2vw, 1.5rem);
+  --space-card: clamp(1.4rem, 2.5vw, 2.5rem);
+  --space-inner: clamp(2.5rem, 5vw, 4rem);
+
+  --container-max: 110rem;
+  --radius-ds-sm: 0.5rem;
+  --radius-ds-md: 0.75rem;
+  --radius-ds-lg: 1rem;
+  --radius-ds-xl: 1.25rem;
+  --radius-ds-full: 999px;
 }
 
 .dark {
@@ -143,6 +181,15 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --surface: oklch(0.205 0 0);
+  --surface-muted: oklch(0.269 0 0);
+  --surface-glass: oklch(0.205 0 0 / 70%);
+  --border-strong: oklch(1 0 0 / 18%);
+  --glow-primary: oklch(0.7 0.12 55 / 24%);
+  --glow-secondary: oklch(1 0 0 / 10%);
+  --gradient-clay: oklch(0.7 0.12 55);
+  --gradient-ink: oklch(0.985 0 0);
+  --gradient-paper: oklch(0.145 0 0);
 }
 
 @layer base {
@@ -179,6 +226,66 @@
   .font-serif {
     font-family: var(--font-serif);
   }
+}
+
+@utility ds-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-container-x);
+}
+
+@utility ds-section {
+  padding-block: var(--space-section-y);
+}
+
+@utility ds-section-tight {
+  padding-block: var(--space-section-y-tight);
+}
+
+@utility type-section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-section-title);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+@utility type-section-description {
+  font-size: var(--text-section-description);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+@utility type-card-title {
+  font-family: var(--font-display);
+  font-size: var(--text-card-title);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.018em;
+}
+
+@utility type-card-description {
+  font-size: var(--text-card-description);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+@utility type-small-label {
+  font-family: var(--font-body);
+  font-size: var(--text-small-label);
+  font-weight: 650;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+@utility ds-glass {
+  background:
+    linear-gradient(145deg, oklch(1 0 0 / 82%), oklch(0.97 0.006 78 / 58%)),
+    var(--surface-glass);
+  border: 1px solid oklch(0.145 0 0 / 10%);
+  backdrop-filter: blur(18px);
 }
 
 /* Fluid editorial display scale */
