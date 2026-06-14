@@ -14,3 +14,10 @@ export const workImages = {
   formField: U("photo-1555181937-efe4e074a301"),
   nacre: U("photo-1657741146788-f14ecb62e716"),
 };
+
+export const processImages = {
+  listen: U("photo-1571513800374-df1bbe650e56", 1200),
+  study: U("photo-1555181937-efe4e074a301", 1200),
+  design: U("photo-1580478491436-fd6a937acc9e", 1200),
+  refine: U("photo-1657741146788-f14ecb62e716", 1200),
+};

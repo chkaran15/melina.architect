@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useGSAPAnimation } from "@/hooks/useGSAPAnimation";
 
@@ -58,12 +59,12 @@ export function ProcessSection() {
   });
 
   return (
-    <section id="process" className="border-y border-border bg-card/60">
+    <section id="process" className="border-border bg-card/60 border-y">
       <div className="mx-auto max-w-[110rem] px-5 py-24 sm:px-8 sm:py-32">
         <SectionHeading index="05" label="How we work" />
         <h2 className="display-xl mt-6 max-w-[14ch]">
           A process built for{" "}
-          <span className="font-serif italic text-clay">clarity</span>
+          <span className="text-clay font-serif italic">clarity</span>
         </h2>
 
         <div ref={ref} className="mt-16 flex flex-col">
@@ -71,22 +72,28 @@ export function ProcessSection() {
             <div
               key={step.no}
               data-step
-              className="grid grid-cols-1 items-start gap-4 border-t border-border py-10 md:grid-cols-[auto_1fr_2fr] md:gap-12"
+              className="border-border grid grid-cols-1 items-start gap-4 border-t py-10 md:grid-cols-[auto_1fr_2fr] md:gap-12"
             >
               <span
                 data-num
-                className="font-display text-6xl font-medium leading-none text-clay/30 md:text-7xl"
+                className="font-display text-clay/30 text-6xl leading-none font-medium md:text-7xl"
               >
                 {step.no}
               </span>
               <h3 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
                 {step.title}
               </h3>
-              <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
+              <p className="text-muted-foreground max-w-xl text-base leading-relaxed">
                 {step.desc}
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-end">
+          <AnimatedButton href="/process" variant="outline">
+            Explore process
+          </AnimatedButton>
         </div>
       </div>
     </section>
