@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: "Work", href: "/work" },
   { label: "Studio", href: "/#studio" },
   { label: "Process", href: "/#process" },
-  { label: "Profile", href: "/#recognition" },
+  { label: "Profile", href: "/profile" },
 ];
 
 export function Navbar() {
@@ -45,7 +45,7 @@ export function Navbar() {
           className={cn(
             "mx-auto flex max-w-[110rem] items-center justify-between px-5 py-5 transition-all duration-500 sm:px-8",
             scrolled &&
-            "mt-3 max-w-[105rem] rounded-full border border-border/70 bg-background/70 px-6 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)] backdrop-blur-xl",
+              "border-border/70 bg-background/70 mt-3 max-w-[105rem] rounded-full border px-6 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)] backdrop-blur-xl",
           )}
         >
           <Link
@@ -60,7 +60,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="link-underline text-sm text-foreground/80 transition-colors hover:text-foreground"
+                className="link-underline text-foreground/80 hover:text-foreground text-sm transition-colors"
               >
                 {link.label}
               </Link>
@@ -74,7 +74,7 @@ export function Navbar() {
           <button
             onClick={() => setOpen(true)}
             aria-label="Open menu"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border md:hidden"
+            className="border-border inline-flex h-10 w-10 items-center justify-center rounded-full border md:hidden"
           >
             <Menu className="h-5 w-5" />
           </button>
@@ -88,7 +88,7 @@ export function Navbar() {
             animate={{ clipPath: "circle(150% at 90% 6%)" }}
             exit={{ clipPath: "circle(0% at 90% 6%)" }}
             transition={{ duration: 0.7, ease: ease.inOut }}
-            className="fixed inset-0 z-60 bg-primary text-primary-foreground md:hidden"
+            className="bg-primary text-primary-foreground fixed inset-0 z-60 md:hidden"
           >
             <div className="flex items-center justify-between px-5 py-5">
               <span className="font-display text-lg font-semibold">
@@ -97,7 +97,7 @@ export function Navbar() {
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close menu"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-primary-foreground/30"
+                className="border-primary-foreground/30 inline-flex h-10 w-10 items-center justify-center rounded-full border"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -106,7 +106,11 @@ export function Navbar() {
             <motion.nav
               initial="hidden"
               animate="show"
-              variants={{ show: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } }}
+              variants={{
+                show: {
+                  transition: { staggerChildren: 0.08, delayChildren: 0.15 },
+                },
+              }}
               className="flex flex-col gap-2 px-5 pt-10"
             >
               {NAV_LINKS.map((link) => (
@@ -116,9 +120,13 @@ export function Navbar() {
                   onClick={() => setOpen(false)}
                   variants={{
                     hidden: { y: 40, opacity: 0 },
-                    show: { y: 0, opacity: 1, transition: { duration: 0.6, ease: ease.expo } },
+                    show: {
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: 0.6, ease: ease.expo },
+                    },
                   }}
-                  className="border-b border-primary-foreground/15 py-4 font-display text-4xl font-medium tracking-tight"
+                  className="border-primary-foreground/15 font-display border-b py-4 text-4xl font-medium tracking-tight"
                 >
                   {link.label}
                 </motion.a>
@@ -126,14 +134,18 @@ export function Navbar() {
               <motion.div
                 variants={{
                   hidden: { y: 20, opacity: 0 },
-                  show: { y: 0, opacity: 1, transition: { duration: 0.6, ease: ease.expo } },
+                  show: {
+                    y: 0,
+                    opacity: 1,
+                    transition: { duration: 0.6, ease: ease.expo },
+                  },
                 }}
                 className="pt-10"
               >
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center gap-2 rounded-full bg-clay px-7 py-3.5 text-sm font-medium text-clay-foreground"
+                  className="bg-clay text-clay-foreground inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium"
                 >
                   Let&apos;s talk
                 </Link>
