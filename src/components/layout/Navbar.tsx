@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const NAV_LINKS = [
+  { label: "Home", href: "/" },
   { label: "Work", href: "/work" },
-  // { label: "Studio", href: "/#studio" },
   { label: "Process", href: "/process" },
   { label: "Profile", href: "/profile" },
 ];
@@ -45,7 +45,7 @@ export function Navbar() {
           className={cn(
             "mx-auto flex max-w-[110rem] items-center justify-between px-5 py-5 transition-all duration-500 sm:px-8",
             scrolled &&
-              "border-border/70 bg-background/70 mt-3 max-w-[105rem] rounded-full border px-6 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)] backdrop-blur-xl",
+            "border-border/70 bg-background/70 mt-3 max-w-[105rem] rounded-full border px-6 py-3 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)] backdrop-blur-xl",
           )}
         >
           <Link
