@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { AnimatedCard } from "@/components/ui/AnimatedCard";
@@ -31,7 +32,7 @@ export function WorkPageSections() {
 
   return (
     <main>
-      <section className="ds-container flex min-h-[88svh] flex-col justify-end pb-16 pt-32 sm:pb-20 sm:pt-40">
+      <section className="ds-container flex min-h-[88svh] flex-col justify-end pt-32 pb-16 sm:pt-40 sm:pb-20">
         <motion.div
           variants={staggerContainer(0.08, 0.18)}
           initial="hidden"
@@ -47,7 +48,7 @@ export function WorkPageSections() {
               className="display-hero mt-8 max-w-[12ch]"
             >
               A full archive of rooms, light, and{" "}
-              <span className="font-serif italic text-clay">measured</span>{" "}
+              <span className="text-clay font-serif italic">measured</span>{" "}
               change.
             </motion.h1>
           </div>
@@ -56,14 +57,14 @@ export function WorkPageSections() {
             <p className="type-section-description text-muted-foreground">
               {workArchiveIntro.description}
             </p>
-            <p className="type-small-label mt-8 text-foreground">
+            <p className="type-small-label text-foreground mt-8">
               {workArchiveIntro.summary}
             </p>
           </motion.div>
         </motion.div>
       </section>
 
-      <section className="border-y border-border bg-surface">
+      <section className="border-border bg-surface border-y">
         <div className="ds-container py-16 sm:py-24">
           <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
             <motion.div
@@ -71,15 +72,21 @@ export function WorkPageSections() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: "-10% 0px" }}
-              className="relative aspect-[4/5] overflow-hidden rounded-xl bg-muted lg:aspect-[5/4]"
+              className="bg-muted relative aspect-[4/5] overflow-hidden rounded-xl lg:aspect-[5/4]"
             >
-              <Image
-                src={featuredWorkProject.image}
-                alt={featuredWorkProject.title}
-                width={1400}
-                height={1120}
-                className="h-full w-full object-cover"
-              />
+              <Link
+                href={`/work/${featuredWorkProject.slug}`}
+                aria-label={`View ${featuredWorkProject.title} case study`}
+                className="group focus-visible:ring-clay focus-visible:ring-offset-surface block h-full focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:outline-none"
+              >
+                <Image
+                  src={featuredWorkProject.image}
+                  alt={featuredWorkProject.title}
+                  width={1400}
+                  height={1120}
+                  className="h-full w-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
+                />
+              </Link>
             </motion.div>
 
             <motion.article
@@ -100,13 +107,13 @@ export function WorkPageSections() {
               </motion.h2>
               <motion.p
                 variants={fadeUp}
-                className="mt-6 max-w-xl text-base leading-7 text-muted-foreground"
+                className="text-muted-foreground mt-6 max-w-xl text-base leading-7"
               >
                 {featuredWorkProject.description}
               </motion.p>
               <motion.dl
                 variants={fadeUp}
-                className="mt-8 grid gap-4 border-y border-border py-6 sm:grid-cols-3"
+                className="border-border mt-8 grid gap-4 border-y py-6 sm:grid-cols-3"
               >
                 <div>
                   <dt className="type-small-label text-muted-foreground">
@@ -131,13 +138,21 @@ export function WorkPageSections() {
                   </dd>
                 </div>
               </motion.dl>
+              <motion.div variants={fadeUp} className="mt-8">
+                <AnimatedButton
+                  href={`/work/${featuredWorkProject.slug}`}
+                  variant="outline"
+                >
+                  View case study
+                </AnimatedButton>
+              </motion.div>
             </motion.article>
           </div>
         </div>
       </section>
 
       <section className="ds-container ds-section-tight">
-        <div className="flex flex-col gap-8 border-b border-border pb-8 lg:flex-row lg:items-end lg:justify-between">
+        <div className="border-border flex flex-col gap-8 border-b pb-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <SectionHeading index="03" label="Archive" />
             <h2 className="type-section-title mt-6 max-w-[10ch]">
@@ -159,7 +174,7 @@ export function WorkPageSections() {
                   aria-pressed={selected}
                   onClick={() => setActiveFilter(filter)}
                   className={cn(
-                    "rounded-full border px-4 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+                    "focus-visible:ring-clay focus-visible:ring-offset-background rounded-full border px-4 py-2 text-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none",
                     selected
                       ? "border-clay bg-clay text-clay-foreground"
                       : "border-border bg-background text-foreground hover:border-foreground/40",
@@ -172,7 +187,7 @@ export function WorkPageSections() {
           </div>
         </div>
 
-        <p className="mt-6 text-sm text-muted-foreground" aria-live="polite">
+        <p className="text-muted-foreground mt-6 text-sm" aria-live="polite">
           Showing {visibleProjects.length}{" "}
           {visibleProjects.length === 1 ? "project" : "projects"}
           {activeFilter === "All" ? "" : ` in ${activeFilter.toLowerCase()}`}.
@@ -193,29 +208,29 @@ export function WorkPageSections() {
                 className={index % 2 === 1 ? "sm:mt-20" : ""}
               >
                 <AnimatedCard item={project} index={index} />
-                <p className="mt-3 max-w-xl text-sm leading-6 text-muted-foreground">
+                <p className="text-muted-foreground mt-3 max-w-xl text-sm leading-6">
                   {project.description}
                 </p>
               </motion.div>
             ))}
           </motion.div>
         ) : (
-          <div className="mt-12 border-y border-border py-12">
-            <p className="max-w-xl text-muted-foreground">
+          <div className="border-border mt-12 border-y py-12">
+            <p className="text-muted-foreground max-w-xl">
               No projects are filed under this type yet.
             </p>
           </div>
         )}
       </section>
 
-      <section className="border-t border-border bg-surface">
+      <section className="border-border bg-surface border-t">
         <div className="ds-container grid gap-8 py-16 sm:py-24 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
             <SectionHeading index="04" label="Start a project" />
             <h2 className="type-section-title mt-6 max-w-[11ch]">
               Have a space that needs a clearer plan?
             </h2>
-            <p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">
+            <p className="text-muted-foreground mt-6 max-w-xl text-base leading-7">
               Share the context, constraints, and atmosphere you want the space
               to hold. A useful first conversation can begin with a few precise
               notes.

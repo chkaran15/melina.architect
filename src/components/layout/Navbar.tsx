@@ -49,7 +49,7 @@ export function Navbar() {
           )}
         >
           <Link
-            href="/#top"
+            href="/"
             className="font-display text-lg font-semibold tracking-tight"
           >
             Melina<span className="text-clay">.</span>architect
