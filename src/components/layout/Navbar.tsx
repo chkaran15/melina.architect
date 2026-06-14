@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "Work", href: "/#work" },
+  { label: "Work", href: "/work" },
   { label: "Studio", href: "/#studio" },
   { label: "Process", href: "/#process" },
   { label: "Profile", href: "/#recognition" },

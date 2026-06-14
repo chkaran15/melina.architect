@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatedCard, type WorkItem } from "@/components/ui/AnimatedCard";
+import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealText } from "@/components/ui/RevealText";
 import { workImages } from "@/lib/images";
@@ -25,10 +26,17 @@ export function ShowcaseSection() {
             className="display-xl mt-6"
           />
         </div>
-        <p className="max-w-sm text-muted-foreground">
-          A selection of residential, interior, and spatial studies exploring
-          proportion, material, light, and daily use.
-        </p>
+        <div className="max-w-sm">
+          <p className="text-muted-foreground">
+            A selection of residential, interior, and spatial studies exploring
+            proportion, material, light, and daily use.
+          </p>
+          <div className="mt-6">
+            <AnimatedButton href="/work" variant="outline">
+              View all work
+            </AnimatedButton>
+          </div>
+        </div>
       </div>
 
       <div className="mt-16 grid gap-x-8 gap-y-16 sm:grid-cols-2">

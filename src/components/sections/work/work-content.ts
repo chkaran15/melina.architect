@@ -28,7 +28,7 @@ export interface WorkArchiveProject {
   location: string;
 }
 
-export const workArchiveProjects: WorkArchiveProject[] = [
+export const workArchiveProjects = [
   {
     title: "Courtyard Residence",
     category: "Residential Planning",
@@ -109,6 +109,6 @@ export const workArchiveProjects: WorkArchiveProject[] = [
     description:
       "A compact retail interior shaped around tactile display surfaces, controlled light, and a calm path through the room.",
   },
-];
+] satisfies readonly [WorkArchiveProject, ...WorkArchiveProject[]];
 
 export const featuredWorkProject = workArchiveProjects[0];
