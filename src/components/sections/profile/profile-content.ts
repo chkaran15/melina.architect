@@ -3,7 +3,7 @@ export const profileHero = {
   title: "A practice shaped by light, proportion, and calm living.",
   deck: "Melina Chaudhary Architect studies how a space is first understood by the body: where light lands, where movement slows, where material asks to be touched, and where everyday routines need less friction.",
   image: {
-    src: "/images/melina-profile.png",
+    src: "/images/melina-photo.png",
     alt: "Melina Chaudhary in a quiet architectural profile portrait.",
   },
 };
